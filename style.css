@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+#start-screen, #quiz-screen, #popup {
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.score, .timer, .withdraw-note {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#play-btn, #withdraw-btn {
+    background-color: #4facfe;
+    color: white;
+    font-weight: bold;
+}
+
+#back-btn {
+    background-color: #ff4757;
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.timer {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+.question {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #4facfe;
+    transition: 0.3s;
+}
+
+.options button:hover {
+    background-color: #4facfe;
+    color: white;
+}
+
+#popup {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdd57;
+    color: #333;
+}
