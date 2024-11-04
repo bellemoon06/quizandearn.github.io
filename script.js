@@ -1,5 +1,16 @@
 // script.js
 
+// Load the score from localStorage when the page loads
+let score = parseFloat(localStorage.getItem('score')) || 0.00;
+document.getElementById('score').textContent = `₱${score.toFixed(2)}`;
+
+// Function to update the score
+function updateScore(points) {
+    score += points;
+    localStorage.setItem('score', score); // Save the updated score to localStorage
+    document.getElementById('score').textContent = `₱${score.toFixed(2)}`;
+}
+
 const questions = [
     { question: "What is the capital city of Japan?", options: ["Beijing", "Seoul", "Tokyo", "Bangkok"], answer: "Tokyo", difficulty: "hard", score: 0.05 },
     { question: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], answer: "Mars", difficulty: "hard", score: 0.05 },
